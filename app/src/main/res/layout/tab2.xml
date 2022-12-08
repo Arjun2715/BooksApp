@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_6641316"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<TextView
+        android:id="@+id/Act1readingNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#45FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="20dp"
+        android:text="Audio Books"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="New arrivals"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="195dp"
+                    android:layout_height="330dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#80FFFFFF"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="161dp"
+                        android:layout_height="210dp"
+                        android:layout_gravity="center"
+
+                        android:layout_margin="5dp"
+                        android:src="@drawable/a15" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="48 Laws of power"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/lawpowerbtn"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginHorizontal="25dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#3F51B5"
+                            android:text="$14.30"
+                            android:textColor="#455A64"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="195dp"
+                    android:layout_height="330dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#80FFFFFF"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="161dp"
+                        android:layout_height="210dp"
+
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/a14" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Good Vibes"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/GVGLaudiobtn"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginHorizontal="25dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#3F51B5"
+                            android:text="$14.30"
+                            android:textColor="#455A64"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Most Read"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="195dp"
+                    android:layout_height="330dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#80FFFFFF"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="161dp"
+                        android:layout_height="210dp"
+                        android:layout_gravity="center"
+
+                        android:layout_margin="5dp"
+                        android:src="@drawable/a6" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="DUNE"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/duneAudiobtn"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginHorizontal="25dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#3F51B5"
+                            android:text="$19.90"
+                            android:textColor="#455A64"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="195dp"
+                    android:layout_height="330dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#80FFFFFF"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="161dp"
+                        android:layout_height="210dp"
+
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/a18" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Killing Floor"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/kilingFloorAudiobtn"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginHorizontal="25dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#3F51B5"
+                            android:text="$12.50"
+                            android:textColor="#455A64"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Discounts"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="195dp"
+                    android:layout_height="330dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#80FFFFFF"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="161dp"
+                        android:layout_height="210dp"
+                        android:layout_gravity="center"
+
+                        android:layout_margin="5dp"
+                        android:src="@drawable/a8" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Bad Magic"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/badMagicAudiobtn"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginHorizontal="25dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#3F51B5"
+                            android:text="$9.90"
+                            android:textColor="#455A64"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="195dp"
+                    android:layout_height="330dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#80FFFFFF"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="161dp"
+                        android:layout_height="210dp"
+
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/a19" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Daemon"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/daemonAudiobtn"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginHorizontal="25dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#3F51B5"
+                            android:text="$10.99"
+                            android:textColor="#455A64"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

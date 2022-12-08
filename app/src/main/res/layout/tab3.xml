@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_6641316"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<TextView
+        android:id="@+id/Act1readingNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#45FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="20dp"
+        android:text="Shop"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#D1D1D1"
+                android:textSize="30sp"
+                android:text="Discounts"
+                android:paddingBottom="20dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#80FFFFFF"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:layout_width="161dp"
+                    android:layout_height="210dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/a15" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="laws_of_power"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="131dp"
+                        android:padding="16dp"
+                        android:text="the_48_laws_of_power_txt"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/lawpowerbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+
+                            android:text="laws_txt"
+                            android:textColor="#455A64"
+                            android:textSize="15sp" />
+                        <Button
+                            android:id="@+id/lawpowerSharebtn"
+                            android:layout_width="40dp"
+                            android:layout_height="47dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="25dp"
+                            android:drawableBottom="@drawable/ic_baseline_share_24"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#80FFFFFF"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:layout_width="161dp"
+                    android:layout_height="210dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/a2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity=""
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="good_strategy"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="134dp"
+                        android:padding="7dp"
+                        android:text="strategy_txt"
+                        android:textSize="15sp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/goodstratbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="strattxt"
+                            android:textColor="#455A64"
+                            android:textSize="15sp" />
+                        <Button
+                            android:id="@+id/goodstratbtnShare"
+                            android:layout_width="40dp"
+                            android:layout_height="47dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="25dp"
+                            android:drawableBottom="@drawable/ic_baseline_share_24"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#80FFFFFF"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:layout_width="161dp"
+                    android:layout_height="210dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/a3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="thinking_strategically"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="132dp"
+                        android:padding="7dp"
+                        android:text="thinking_strategically_txt"
+                        android:textSize="15sp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/thinkingstratbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="15$"
+                            android:textColor="#455A64"
+                            android:textSize="15sp" />
+                        <Button
+                            android:id="@+id/thinkingstratSharebtn"
+                            android:layout_width="40dp"
+                            android:layout_height="47dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="25dp"
+                            android:drawableBottom="@drawable/ic_baseline_share_24"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#80FFFFFF"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:layout_width="161dp"
+                    android:layout_height="210dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/a6" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="dune"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="129dp"
+                        android:padding="7dp"
+                        android:text="dune_txt"
+                        android:textSize="15sp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/dunebtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="dune_Price"
+                            android:textColor="#455A64"
+                            android:textSize="15sp" />
+                        <Button
+                            android:id="@+id/duneSharebtn"
+                            android:layout_width="40dp"
+                            android:layout_height="47dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="25dp"
+                            android:drawableBottom="@drawable/ic_baseline_share_24"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#80FFFFFF"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:layout_width="161dp"
+                    android:layout_height="210dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/a7" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="stolen"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="129dp"
+                        android:padding="7dp"
+                        android:text="stolen_txt"
+                        android:textSize="15sp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/stolenbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="stolenPrice"
+                            android:textColor="#455A64"
+                            android:textSize="15sp" />
+                        <Button
+                            android:id="@+id/stolenSharebtn"
+                            android:layout_width="40dp"
+                            android:layout_height="47dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="25dp"
+                            android:drawableBottom="@drawable/ic_baseline_share_24"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
