@@ -14,15 +14,44 @@
 
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
-            android:background="#3F51B5"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#3F51B5">
+
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Book App"
-
+                android:layout_marginRight="150dp"
                 android:textColor="@color/white"
                 android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/cart"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:layout_alignParentEnd="true"
+                android:drawableRight="@drawable/ic_baseline_local_grocery_store_24">
+
+            </Button>
+            <Button
+                android:id="@+id/info"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:layout_alignParentEnd="true"
+                android:drawableRight="@drawable/ic_baseline_info_24">
+
+            </Button>
+            <Button
+                android:id="@+id/menu"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:layout_alignParentEnd="true"
+                android:drawableRight="@drawable/ic_baseline_menu_24">
+
+            </Button>
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
     <com.google.android.material.tabs.TabLayout

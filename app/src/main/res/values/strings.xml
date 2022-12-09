@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Activity3v1</string>
+
+    <string name="lawPower_order_Message">You ordered 48 Law of power </string>
+    <string name="Goodstratergy_order_Message">You ordered Good Stratergy/Bad Stratergy</string>
+    <string name="Dune_order_Message">You ordered Dune </string>
+    <string name="Martian_order_Message">You ordered Martian </string>
+
+    <string name="action_order_message">U clicked a menu option</string>
 </resources>
