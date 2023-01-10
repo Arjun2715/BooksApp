@@ -33,7 +33,7 @@
                 android:layout_width="410dp"
                 android:layout_height="40dp"
                 android:padding="5dp"
-                android:text="non_fiction_books"
+                android:text="Non fiction books"
                 android:textSize="20sp"
                 android:textStyle="bold"/>
             <HorizontalScrollView
@@ -84,7 +84,7 @@
                 android:layout_width="410dp"
                 android:layout_height="40dp"
                 android:padding="5dp"
-                android:text="sci_fiction_books"
+                android:text="Sci fiction books"
                 android:textSize="20sp"
                 android:textStyle="bold"/>
 
@@ -132,7 +132,7 @@
                 android:layout_width="410dp"
                 android:layout_height="40dp"
                 android:padding="5dp"
-                android:text="lifestyle"
+                android:text="Lifestyle"
                 android:textSize="20sp"
                 android:textStyle="bold"/>
 
@@ -179,7 +179,7 @@
                 android:layout_width="410dp"
                 android:layout_height="40dp"
                 android:padding="5dp"
-                android:text="mystery"
+                android:text="Mystery"
                 android:textSize="20sp"
                 android:textStyle="bold" />
             <HorizontalScrollView
@@ -225,7 +225,7 @@
                 android:layout_width="410dp"
                 android:layout_height="40dp"
                 android:padding="5dp"
-                android:text="cyberpunk"
+                android:text="Cyberpunk"
                 android:textSize="20sp"
                 android:textStyle="bold"/>
             <HorizontalScrollView
