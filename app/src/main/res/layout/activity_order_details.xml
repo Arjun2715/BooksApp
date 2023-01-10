@@ -25,7 +25,7 @@
                 android:textColor="@color/white"
                 android:textSize="18dp" />
 
-            <Button
+            <!--<Button
                 android:id="@+id/cart"
                 android:layout_width="55dp"
                 android:layout_height="wrap_content"
@@ -42,13 +42,14 @@
                 android:layout_alignParentEnd="true"
                 android:drawableRight="@drawable/ic_baseline_info_24">
 
-            </Button>
+            </Button>-->
             <Button
                 android:id="@+id/menu"
                 android:layout_width="55dp"
                 android:layout_height="wrap_content"
                 android:background="#00FFFFFF"
                 android:layout_alignParentEnd="true"
+                android:layout_marginLeft="130dp"
                 android:drawableRight="@drawable/ic_baseline_menu_24">
 
             </Button>

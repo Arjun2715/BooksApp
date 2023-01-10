@@ -61,13 +61,19 @@ public class MainActivity extends AppCompatActivity {
         intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
     }
+    private void openTopInfo() {
+        Intent intent = new Intent(this, ActivityInfo.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        startActivity(intent);
+    }
 
 
     public void openInfo(){
         info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                diaplayToast("No Info Available");
+                diaplayToast("Info");
+                openTopInfo();
             }
         });
     }
