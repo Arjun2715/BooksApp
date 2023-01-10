@@ -56,7 +56,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="laws_of_power"
+                        android:text="Laws of power"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -64,7 +64,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="131dp"
                         android:padding="16dp"
-                        android:text="the_48_laws_of_power_txt"
+                        android:text="The 48 laws of power.         "
                         android:textSize="15sp" />
 
                     <LinearLayout
@@ -77,7 +77,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
 
-                            android:text="laws_txt"
+                            android:text="OPEN"
                             android:textColor="#455A64"
                             android:textSize="15sp" />
                         <Button
@@ -112,7 +112,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="good_strategy"
+                        android:text="Good strategy"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -120,7 +120,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="134dp"
                         android:padding="7dp"
-                        android:text="strategy_txt"
+                        android:text="Good strategy, bad strategy,"
                         android:textSize="15sp" />
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -132,7 +132,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="strattxt"
+                            android:text="OPEN"
                             android:textColor="#455A64"
                             android:textSize="15sp" />
                         <Button
@@ -167,7 +167,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="thinking_strategically"
+                        android:text="Thinking strategically"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -175,7 +175,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="132dp"
                         android:padding="7dp"
-                        android:text="thinking_strategically_txt"
+                        android:text="Thinking strategically"
                         android:textSize="15sp" />
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -220,7 +220,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="dune"
+                        android:text="Dune"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -228,7 +228,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="129dp"
                         android:padding="7dp"
-                        android:text="dune_txt"
+                        android:text="Dune"
                         android:textSize="15sp" />
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -239,7 +239,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="dune_Price"
+                            android:text="20$"
                             android:textColor="#455A64"
                             android:textSize="15sp" />
                         <Button
@@ -273,7 +273,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="stolen"
+                        android:text="Stolen"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -281,7 +281,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="129dp"
                         android:padding="7dp"
-                        android:text="stolen_txt"
+                        android:text="Stolen description"
                         android:textSize="15sp" />
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -292,7 +292,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="stolenPrice"
+                            android:text="9$"
                             android:textColor="#455A64"
                             android:textSize="15sp" />
                         <Button
