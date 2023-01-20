@@ -139,6 +139,8 @@ public class MainActivity extends AppCompatActivity {
                 ViewPagerAdapter.addFragment(tab1fragment.getInstance(),"Library");
                 ViewPagerAdapter.addFragment(tab2fragment.getInstance(),"Audio Books");
                 ViewPagerAdapter.addFragment(tab3fragment.getInstance(),"Shop");
+                ViewPagerAdapter.addFragment(tab4fragment.getInstance(),"UF2");
+
                 viewPager.setAdapter(ViewPagerAdapter);
                 tabLayout.setupWithViewPager(viewPager);
             }
