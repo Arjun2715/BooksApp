@@ -1,17 +1,21 @@
 package com.example.activity3v1;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class tab4fragment extends Fragment {
     private Button lawBookOne;
@@ -24,7 +28,10 @@ public class tab4fragment extends Fragment {
     private Button thinkingStrategicallyShareBtn;
     private Button duneShareBtn;
     private Button stolenShareBtn;
-
+    ImageView imageView;
+    int currentImage = 0;
+    int SWIPE_MIN_DISTANCE = 0;
+    int SWIPE_THRESHOLD_VELOCITY = 2;
 
     public static tab4fragment getInstance() {
         tab4fragment tab4fragment = new tab4fragment();
@@ -38,108 +45,40 @@ public class tab4fragment extends Fragment {
         super.onAttach(context);
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.tab4, container, false);
+/*
 
-        /*lawBookOne = view.findViewById(R.id.lawpowerbtn);
-        stolen = view.findViewById(R.id.stolenbtn);
-        goodStrategy = view.findViewById(R.id.goodstratbtn);
-        thinkingStrategically = view.findViewById(R.id.thinkingstratbtn);
-        dune = view.findViewById(R.id.dunebtn);
-        lawBookOne.setOnClickListener(new View.OnClickListener() {
+        int[] images = {R.drawable.atomicHabit, R.drawable.ichigoichi, R.drawable.ikigai};
+
+        imageView = (ImageView) view.findViewById(R.id.flingTest);
+        imageView.setImageResource(images[currentImage]);
+
+        imageView.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View v) {
-                Uri uri = Uri.parse("https://ia802802.us.archive.org/29/items/THE48LAWSOFPOWER_201810/THE%2048%20LAWS%20OF%20POWER.pdf");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
+            public boolean onTouch(View view, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_UP) {
+                    float x1 = event.getX();
+                    float x2 = event.getX();
+                    if (x1 - x2 > SWIPE_MIN_DISTANCE && Math.abs(x1 - x2) > SWIPE_THRESHOLD_VELOCITY) {
+                        if (currentImage < images.length - 1) {
+                            currentImage++;
+                            imageView.setImageResource(images[currentImage]);
+                        }
+                    } else if (x2 - x1 > SWIPE_MIN_DISTANCE && Math.abs(x1 - x2) > SWIPE_THRESHOLD_VELOCITY) {
+                        if (currentImage > 0) {
+                            currentImage--;
+                            imageView.setImageResource(images[currentImage]);
+                        }
+                    }
+                }
+                return true;
             }
-        });
-        goodStrategy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Uri uri = Uri.parse("http://dspace.vnbrims.org:13000/jspui/bitstream/123456789/4584/1/Good%20Strategy_Bad%20Strategy.pdf");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-            }
-        });
-        thinkingStrategically.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Uri uri = Uri.parse("https://www.amazon.es/Thinking-Strategically-Competitive-Business-Paperback/dp/0393310353");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-            }
-        });
-        dune.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Uri uri = Uri.parse("https://www.amazon.es/Dune-Nueva-edición-Las-crónicas/dp/8466353771/ref=sr_1_1?__mk_es_ES=ÅMÅŽÕÑ&crid=C4AG1SIRRO69&keywords=dune&qid=1673944480&sprefix=dun%2Caps%2C101&sr=8-1");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-            }
-        });
+        });*/
 
-
-        stolen.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Uri uri = Uri.parse("https://www.amazon.es/Stolen-Lucy-Christopher/dp/1908435755");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-            }
-        });
-
-        lawBookShareBtn = (Button) view.findViewById(R.id.lawpowerSharebtn);
-        goodStrategyShareBtn = (Button) view.findViewById(R.id.goodstratbtnShare);
-        thinkingStrategicallyShareBtn = (Button) view.findViewById(R.id.thinkingstratSharebtn);
-        duneShareBtn = (Button) view.findViewById(R.id.duneSharebtn);
-        stolenShareBtn = (Button) view.findViewById(R.id.stolenSharebtn);
-
-        lawBookShareBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                shareIntent();
-            }
-        });
-
-        goodStrategyShareBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                shareIntent();
-            }
-        });
-
-        thinkingStrategicallyShareBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                shareIntent();
-            }
-        });
-
-        duneShareBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                shareIntent();
-            }
-        });
-
-        stolenShareBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                shareIntent();
-            }
-        });
-
-
-
-    //share intents for books
-    private void shareIntent() {
-        Intent intent = new Intent(Intent.ACTION_SEND);
-        intent.setType("text/plain");
-        startActivity(Intent.createChooser(intent, "Share using"));
-    }*/
         return view;
     }
 }
