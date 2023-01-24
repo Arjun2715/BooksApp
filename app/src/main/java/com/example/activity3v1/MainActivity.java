@@ -84,6 +84,18 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(orderDetailsIntent2);
 
                         return true;
+                    case R.id.nav_item_3:
+                        // Handle the Info item click
+                        Intent orderDetailsIntent3 = new Intent(MainActivity.this, UF2Activity1Part1.class);
+                        startActivity(orderDetailsIntent3);
+
+                        return true;
+                    case R.id.nav_item_4:
+                        // Handle the Info item click
+                        Intent orderDetailsIntent4 = new Intent(MainActivity.this, ActivityUF2Act1.class);
+                        startActivity(orderDetailsIntent4);
+
+                        return true;
                     default:
                         return false;
                 }
@@ -112,22 +124,16 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void openInfo(){
-        info.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                diaplayToast("Info");
-                openTopInfo();
-            }
+        info.setOnClickListener(view -> {
+            diaplayToast("Info");
+            openTopInfo();
         });
     }
     public void openCart(){
-        cart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        cart.setOnClickListener(view -> {
 
-                diaplayToast("Cart Opened");
-                openTopCart();
-            }
+            diaplayToast("Cart Opened");
+            openTopCart();
         });
     }
 
@@ -139,7 +145,6 @@ public class MainActivity extends AppCompatActivity {
                 ViewPagerAdapter.addFragment(tab1fragment.getInstance(),"Library");
                 ViewPagerAdapter.addFragment(tab2fragment.getInstance(),"Audio Books");
                 ViewPagerAdapter.addFragment(tab3fragment.getInstance(),"Shop");
-                ViewPagerAdapter.addFragment(tab4fragment.getInstance(),"UF2");
 
                 viewPager.setAdapter(ViewPagerAdapter);
                 tabLayout.setupWithViewPager(viewPager);
@@ -169,10 +174,10 @@ public class MainActivity extends AppCompatActivity {
     public void MartianOrder(View view) {
         diaplayToast(getString(R.string.Martian_order_Message));
     }
-*/
+
     public void displayToast(String message) {
         Toast.makeText(getApplicationContext(), message,
                 Toast.LENGTH_SHORT).show();
-    }
+    }*/
 
 }
