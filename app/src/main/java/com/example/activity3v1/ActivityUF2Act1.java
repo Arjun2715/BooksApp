@@ -51,7 +51,7 @@ public class ActivityUF2Act1 extends Fragment {
 
         CarouselImageView carouselImageView = view.findViewById(R.id.carousel_image);
         carouselImageView.setImages(new Drawable[]{
-                getResources().getDrawable(R.drawable.ikigai),
+                getResources().getDrawable(R.drawable.a),
                 getResources().getDrawable(R.drawable.atomichabit),
                 getResources().getDrawable(R.drawable.ichigoichi)
 

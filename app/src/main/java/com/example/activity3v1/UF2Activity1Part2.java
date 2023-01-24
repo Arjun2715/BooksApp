@@ -1,16 +1,13 @@
 package com.example.activity3v1;
 
+import static com.example.activity3v1.R.id.image_view;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
-import android.util.AttributeSet;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
@@ -18,18 +15,18 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-import androidx.appcompat.widget.AppCompatImageView;
 public class UF2Activity1Part2 extends AppCompatActivity {
-    private ImageView
-            imageView;
-    @SuppressLint("ClickableViewAccessibility")
+
+    private ImageView imageView;
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_uf2_activity1_part2);
-        imageView = findViewById(R.id.image_view);
-        imageView.setImageDrawable(getResources().getDrawable(R.drawable.a1));
+        setContentView(R.layout.activity_main);
 
+        imageView = (ImageView) findViewById(image_view);
+        imageView.setImageDrawable(getResources().getDrawable(R.drawable.a));
         imageView.setOnTouchListener(new OnSwipeTouchListener(this) {
             @Override
             public void onSwipeLeft() {
@@ -60,7 +57,8 @@ public class UF2Activity1Part2 extends AppCompatActivity {
             }
         });
     }
-    public static class OnSwipeTouchListener implements View.OnTouchListener {
+
+    public class OnSwipeTouchListener implements View.OnTouchListener {
 
         private final GestureDetector gestureDetector;
 
@@ -80,7 +78,6 @@ public class UF2Activity1Part2 extends AppCompatActivity {
         public void onSwipeBottom() {
         }
 
-        @SuppressLint("ClickableViewAccessibility")
         public boolean onTouch(View v, MotionEvent event) {
             return gestureDetector.onTouchEvent(event);
         }

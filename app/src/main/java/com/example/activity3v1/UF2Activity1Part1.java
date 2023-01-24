@@ -9,9 +9,6 @@ import android.util.AttributeSet;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import androidx.appcompat.widget.AppCompatImageView;
-import android.graphics.drawable.Drawable;
-import android.os.Bundle;
-import android.widget.Toast;
 
 public class UF2Activity1Part1 extends AppCompatActivity {
 
@@ -22,7 +19,7 @@ public class UF2Activity1Part1 extends AppCompatActivity {
 
         ActivityUF2Act1.CarouselImageView carouselImageView = findViewById(R.id.carousel_image);
         carouselImageView.setImages(new Drawable[]{
-                getResources().getDrawable(R.drawable.ikigai),
+                getResources().getDrawable(R.drawable.a),
                 getResources().getDrawable(R.drawable.atomichabit),
                 getResources().getDrawable(R.drawable.ichigoichi)
 
