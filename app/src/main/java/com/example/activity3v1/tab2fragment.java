@@ -9,12 +9,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class tab2fragment extends Fragment {
+    public List<Cart> cartItems = new ArrayList<>();
     private Button img1;
     private Button img2;
     public static tab2fragment getInstance(){
@@ -37,9 +42,12 @@ public class tab2fragment extends Fragment {
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri = Uri.parse("https://www.audible.es/pd/48-Laws-of-Power-Audiolibro/1622318641?qid=1673944889&sr=1-1&ref=a_search_c3_lProduct_1_1&pf_rd_p=edc39886-a4e3-4991-8ce5-effa92157a44&pf_rd_r=7MD8WX81Q9RTHKFSS44S&pageLoadId=FHJgcbtxKrUB4nzj&creativeId=41e85e98-10b8-40e2-907d-6b663f04a42d");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
+                // Add item to cart
+                Cart cartItem = new Cart("48 Laws of Power", 14.30);
+                cartItems.add(cartItem);
+
+                // Display a toast message or perform any other action to indicate that the item was added to the cart
+                Toast.makeText(getActivity(), "Item added to cart: " + cartItem.getTitle(), Toast.LENGTH_SHORT).show();
             }
         });
         img2 = (Button) view.findViewById(R.id.GVGLaudiobtn);
@@ -47,12 +55,29 @@ public class tab2fragment extends Fragment {
         img2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri = Uri.parse("https://www.audible.es/pd/Good-Vibes-Good-Life-Audiolibro/1788174992?qid=1673945028&sr=1-1&ref=a_search_c3_lProduct_1_1&pf_rd_p=edc39886-a4e3-4991-8ce5-effa92157a44&pf_rd_r=GMN45J9TGFPMKB4QS089&pageLoadId=KKgwtOlZ0mgTOhQd&creativeId=41e85e98-10b8-40e2-907d-6b663f04a42d");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
+                Cart cartItem = new Cart("Good Vibes Good Life", 14.30);
+                cartItems.add(cartItem);
+
+                // Display a toast message or perform any other action to indicate that the item was added to the cart
+                Toast.makeText(getActivity(), "Item added to cart: " + cartItem.getTitle(), Toast.LENGTH_SHORT).show();            }
+        });
+        Button viewCartButton = view.findViewById(R.id.viewCartButton);
+        viewCartButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                viewCart();
             }
         });
-
         return view;
+    }
+    private void viewCart() {
+        // Create an intent to open the cart view screen
+        Intent intent = new Intent(getActivity(), OrderDetails.class);
+        ArrayList<Cart> cartItemList = (ArrayList<Cart>) cartItems;
+        intent.putParcelableArrayListExtra("cartItems", new ArrayList<>(cartItems));
+
+        startActivity(intent);
+        // Pass the cart items to the cart view screen
+
     }
 }

@@ -28,6 +28,16 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <Button
+                android:id="@+id/viewCartButton"
+                android:layout_width="51dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="16dp"
+                android:background="@drawable/ic_baseline_local_grocery_store_24"
+                android:textColor="#FFFFFF" />
+
             <TextView
                 android:layout_width="410dp"
                 android:layout_height="wrap_content"
@@ -89,9 +99,9 @@
                 <LinearLayout
                     android:layout_width="195dp"
                     android:layout_height="330dp"
+                    android:layout_margin="5dp"
                     android:layout_marginBottom="30dp"
                     android:background="#80FFFFFF"
-                    android:layout_margin="5dp"
                     android:orientation="vertical">
 
                     <ImageView
@@ -136,8 +146,6 @@
             </LinearLayout>
 
 
-
-
             <TextView
                 android:layout_width="410dp"
                 android:layout_height="wrap_content"
@@ -145,6 +153,7 @@
                 android:text="Most Read"
                 android:textSize="30sp"
                 android:textStyle="bold" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -198,9 +207,9 @@
                 <LinearLayout
                     android:layout_width="195dp"
                     android:layout_height="330dp"
+                    android:layout_margin="5dp"
                     android:layout_marginBottom="30dp"
                     android:background="#80FFFFFF"
-                    android:layout_margin="5dp"
                     android:orientation="vertical">
 
                     <ImageView
@@ -243,6 +252,7 @@
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
+
             <TextView
                 android:layout_width="410dp"
                 android:layout_height="wrap_content"
@@ -250,6 +260,7 @@
                 android:text="Discounts"
                 android:textSize="30sp"
                 android:textStyle="bold" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -303,9 +314,9 @@
                 <LinearLayout
                     android:layout_width="195dp"
                     android:layout_height="330dp"
+                    android:layout_margin="5dp"
                     android:layout_marginBottom="30dp"
                     android:background="#80FFFFFF"
-                    android:layout_margin="5dp"
                     android:orientation="vertical">
 
                     <ImageView

@@ -57,8 +57,7 @@
         android:background="#903F51B5"
         app:tabSelectedTextColor="@color/white"
         app:tabIndicatorColor="@color/white"
-        app:tabTextColor="#4E4E4E"
-        android:id="@+id/tabLayout"
+        app:tabTextColor="#4E4E4E"        android:id="@+id/tabLayout"
         app:layout_constraintTop_toTopOf="parent">
     </com.google.android.material.tabs.TabLayout>
     <androidx.viewpager.widget.ViewPager
