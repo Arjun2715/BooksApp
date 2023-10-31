@@ -84,18 +84,6 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(orderDetailsIntent2);
 
                         return true;
-                    case R.id.nav_item_3:
-                        // Handle the Info item click
-                        Intent orderDetailsIntent3 = new Intent(MainActivity.this, UF2Activity1Part1.class);
-                        startActivity(orderDetailsIntent3);
-
-                        return true;
-                    case R.id.nav_item_4:
-                        // Handle the Info item click
-                        Intent orderDetailsIntent4 = new Intent(MainActivity.this, ActivityUF2Act1.class);
-                        startActivity(orderDetailsIntent4);
-
-                        return true;
                     default:
                         return false;
                 }

@@ -1,209 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.activity3v1.OrderDetails">
+    android:orientation="vertical"
+    android:background="@drawable/img_6641316"
 
-    <com.google.android.material.appbar.AppBarLayout
+    android:padding="16dp">
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.appcompat.widget.Toolbar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#3F51B5">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="150dp"
-                android:text="Book App"
-                android:textColor="@color/white"
-                android:textSize="18dp" />
-
-            <!--<Button
-                android:id="@+id/cart"
-                android:layout_width="55dp"
-                android:layout_height="wrap_content"
-                android:background="#00FFFFFF"
-                android:layout_alignParentEnd="true"
-                android:drawableRight="@drawable/ic_baseline_local_grocery_store_24">
-
-            </Button>
-            <Button
-                android:id="@+id/info"
-                android:layout_width="55dp"
-                android:layout_height="wrap_content"
-                android:background="#00FFFFFF"
-                android:layout_alignParentEnd="true"
-                android:drawableRight="@drawable/ic_baseline_info_24">
-
-            </Button>-->
-        </androidx.appcompat.widget.Toolbar>
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <TextView
-        android:id="@+id/order_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="56dp"
-        android:text="Order Details"
-        android:textSize="18sp"
+        android:text="Cart"
+        android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:paddingBottom="8dp"/>
 
-    <TextView
-        android:id="@+id/name_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
-        android:text="Name"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/order_textview" />
+    <ListView
+        android:id="@+id/cartListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
 
-    <EditText
-        android:id="@+id/name_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:hint="Enter Name"
-        android:inputType="textPersonName"
-        app:layout_constraintBaseline_toBaselineOf="@+id/name_label"
-        app:layout_constraintStart_toEndOf="@+id/name_label" />
+    </ListView>
 
-    <TextView
-        android:id="@+id/address_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:text="Address"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_label" />
-
-    <EditText
-        android:id="@+id/address_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:hint="Enter Address"
-        android:inputType="textMultiLine"
-        app:layout_constraintBaseline_toBaselineOf="@+id/address_label"
-        app:layout_constraintStart_toEndOf="@+id/address_label" />
-
-    <TextView
-        android:id="@+id/phone_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:text="Phone"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/address_text" />
-
-    <EditText
-        android:id="@+id/phone_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:hint="Enter Phone Number"
-        android:inputType="phone"
-        app:layout_constraintBaseline_toBaselineOf="@+id/phone_label"
-        app:layout_constraintStart_toEndOf="@+id/phone_label" />
-
-    <TextView
-        android:id="@+id/note_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:text="Note"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phone_label" />
-
-    <EditText
-        android:id="@+id/note_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:hint="Enter Note"
-        android:inputType="textCapSentences|textMultiLine"
-        app:layout_constraintBaseline_toBaselineOf="@+id/note_label"
-        app:layout_constraintStart_toEndOf="@+id/note_label" />
-
-    <TextView
-        android:id="@+id/delivery_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:text="Choose Delivery Method"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/note_text" />
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/delivery_label">
-
-        <RadioButton
-            android:id="@+id/sameday"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="Same Day Messenger Service"
-            tools:ignore="OnClick" />
-
-        <RadioButton
-            android:id="@+id/nextday"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="Next Day Ground Delivery"
-            android:checked="true"/>
-
-        <RadioButton
-            android:id="@+id/pickup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="Pick Up" />
-    </RadioGroup>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:background="#3F51B5"
-        android:text="Order Now"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
